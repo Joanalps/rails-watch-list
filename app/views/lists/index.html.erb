@@ -1,0 +1,17 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://media.timeout.com/images/106026624/750/422/image.jpg);">
+  <div class="container">
+    <h1>Lists</h1>
+  </div>
+</div>
+
+
+<div>
+  <h1>Lists</h1>
+
+  <ul>
+      <% @lists.each do |list| %>
+        <li><%= link_to list.name, list_path(list) %></li>
+      <% end %>
+  </ul>
+
+</div>

@@ -1,0 +1,12 @@
+<div>
+  <h1>Bookmarks</h1>
+
+  <ul>
+      <% @Bookmarks.each do |bookmark| %>
+        <li><%= link_to bookmark.content, bookmark_path(bookmark) %></li>
+      <% end %>
+  </ul>
+
+  <%# <%= link_to "Add a new list", new_list_path, class:"btn btn-primary" %>
+
+</div>
